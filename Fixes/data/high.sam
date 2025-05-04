@@ -1,0 +1,75 @@
+#
+#	Theme Park World Settings
+#	HIGH DETAIL
+#
+#	Copyright EA
+#
+#	Modifying this file is NOT recommended unless directed by an Electronic Arts Customer Service Representative
+#
+
+
+#
+#	TEXTURE_QUALITY - 0->Minimum, 1->Low, 2->Medium, 3->High
+#	TEXTURE_FILTERING - 0->Point, 1->Bilinear, 2->Trilinear, 3->Anisotropic
+#	PROCEDURAL_TEXTURING - 0->Off, 1->16x16, 2->32x32, 3->64x64
+#	PROCEDURAL_TEXTURE_CACHE - 0->Small, 1->High
+#	ANIMATING_TEXTURES - 0->Off, 1->On
+#	SKY_QUALITY 1,2 or 4 Layers
+#	SKY_SHADOW - 0->Off, 1->On
+#	SKY_DETAIL - 0->Off, 1->On
+#	MESH_SHADOW - 0->Off, 1->On
+#	SPRITE_SHADOW - 0->Off, 1->Low, 2->Medium, 3->High
+#	TRIPLE_BUFFER - 0->Off, 1->On
+#	FOG - 0->Vertex, 1->Depth
+#	MIPMAP - 0->Off, 1->On
+#	RENDER32 - 0->Off, 1->On
+#	TEXTURE32 - 0->Off, 1->On
+#	BUMPMAPPING - 0->Off, 1->On
+#	FIRST_PERSON_VIEW_DISTANCE - 0->Short, 1->Medium, 2->Long, 3->Maximum
+#	LIGHTING - 0->Off, 1->On
+#	
+
+#
+#	Graphical Options
+#
+
+GraphicalOptions.TEXTUREQUALITY					3
+GraphicalOptions.TEXTUREFILTERING				3
+GraphicalOptions.PROCEDURALTEXTURING			3
+GraphicalOptions.PROCEDURALTEXTURECACHE			1
+GraphicalOptions.ANIMATINGTEXTURES				1
+GraphicalOptions.SKYQUALITY						4
+GraphicalOptions.SKYDETAIL						1
+GraphicalOptions.SKYSHADOW						0
+GraphicalOptions.MESHSHADOW						1
+GraphicalOptions.SPRITESHADOW					3
+GraphicalOptions.TRIPLEBUFFER					1
+GraphicalOptions.FOG							1
+GraphicalOptions.MIPMAP							1
+GraphicalOptions.RENDER32						1
+GraphicalOptions.TEXTURE32						1
+GraphicalOptions.BUMPMAPPING					1
+GraphicalOptions.FIRSTPERSONVIEWDISTANCE		3
+GraphicalOptions.LIGHTING						1
+GraphicalOptions.FORCELOWALPHAREF				0
+
+
+#
+#	PARTICLE_DENSITY - 500->2000
+#	COASTER_SMOOTHNESS - 1->8
+#	COASTER_TRACK_DETAIL - 0->Off, 1->On
+#	NUM_KIDS - 0->4, 1->6, 2->8, 3->MAX
+#	WEATHER - 0->Off, 1->On
+#
+
+#
+#	Game Options
+#
+
+GameOptions.COASTERSMOOTHNESS					8
+GameOptions.COASTERTRACKDETAIL					1
+GameOptions.PARTICLEDENSITY						2000
+GameOptions.TOTALPARTICLES						2000
+GameOptions.NUMKIDS								3
+GameOptions.WEATHER								1
+GameOptions.LOBBYOBJECTS						100

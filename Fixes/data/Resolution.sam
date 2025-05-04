@@ -1,0 +1,14 @@
+#
+#	Theme Park World Resolution Override
+#
+#	Copyright EA
+#
+#	Modifying this file is NOT recommended unless directed by an Electronic Arts Customer Service Representative
+#
+
+#
+#	RESOULTION 0 - Use setting from Options Screen, 1 - 512x384, 2 - 640x480, 3 - 800x600, 4 - 1024x768, 5- 1280x1024, 6 - 1600x1200, 7 - 2048x1536
+#
+
+Res.RESOLUTION	4
+
