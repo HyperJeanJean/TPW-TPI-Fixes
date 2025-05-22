@@ -15,7 +15,7 @@
 
  - Install the patch 2.0 (you can find it in the TPW folder)
 
- - Copy the TP.exe file from the "TPW" folder into your installation folder
+ - Copy the TP.exe file and the "data" folder from the "TPW" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
 
@@ -31,7 +31,7 @@
 
  - Install the game
 
- - Copy the Game.exe file from the "TPI" folder into your installation folder
+ - Copy the Game.exe file and the "data" folder from the "TPI" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
 
@@ -43,7 +43,7 @@
 
 ## Detailed list of changes
 
- - TPW now works on modern systems thanks to the inclusion of some missing font files (in the folder "data/tpwfnt"). More info here: https://web.archive.org/web/20200628063012/https://www.adamhearn.co.uk/games/themeparkworld/tpwwin2kfix.html
+ - Fonts needed for both game have been extracted from their respective fonts.wad archive. TPW wouldn't work without them and TPI would work, but with a fallback font instead (Arial I believe). More info here: https://web.archive.org/web/20200628063012/https://www.adamhearn.co.uk/games/themeparkworld/tpwwin2kfix.html (although the fix provided on this website did not include all the font files)
 
  - The text now correctly appears on the park gates and the rides. To fix that, usp10.dll was renamed to usp11.dll as Windows seems to prefer using its own non-working version of usp10.dll
 
