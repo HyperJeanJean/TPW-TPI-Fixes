@@ -15,7 +15,7 @@
 
  - Copy the TP.exe file from the "TPW" folder into your installation folder
 
- - Copy the files from the "Fixes" folder into your installation folder
+ - Copy the files from the "Common" folder into your installation folder
 
  - Restart your computer
 
@@ -29,7 +29,7 @@
 
  - Copy the Game.exe file from the "TPI" folder into your installation folder
 
- - Copy the files from the "Fixes" folder into your installation folder
+ - Copy the files from the "Common" folder into your installation folder
 
  - Restart your computer
 
