@@ -63,3 +63,4 @@
 ## Known issues
  - Random crashes. It may or may not be related to graphics settings. In TPI at least, having a resolution above 1024x768 makes the game really unstable.
  - Music archives in TPI are corrupted for the 2nd and 3rd parks, leading to music disappearing in the late game. Corrupted music tracks do not seem to be recoverable.
+ - TPI does not handle non-ascii characters very well for prebuilt coasters  (e.g. the "é" character). Names are likely to be cut.
