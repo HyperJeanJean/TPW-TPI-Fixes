@@ -2,6 +2,8 @@
 
 ## Theme Park World
 
+**DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL NOT WORK.**
+
  - Install the game
 
  - Copy the following folders from your disc into your installation folder:
@@ -24,6 +26,8 @@
  - Optional: if you want to play on a 1080p monitor, you can copy the files from "TPW/1440x1080" into your installation folder, but be warned that this may have a negative impact on the game stability
 
 ## Theme Park Inc
+
+**DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL USE A FALLBACK FONT FOR MOST OF ITS IN-GAME TEXT.**
 
  - Install the game
 
