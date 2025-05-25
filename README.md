@@ -4,6 +4,13 @@
 
 **DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL NOT WORK.**
 
+ - If you had already installed the game: 
+   - Backup your saves
+   - Uninstall the game
+   - Delete the installation folder (usually C:\Program Files (x86)\Bullfrog\Theme Park World)
+   - Delete the corresponding folder in your VirtualStore if it exists (usually C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park World)
+   - Restart your computer
+
  - Install the game
 
  - Copy the following folders from your disc into your installation folder:
@@ -25,9 +32,18 @@
 
  - Optional: if you want to play on a 1080p monitor, you can copy the files from "TPW/1440x1080" into your installation folder, but be warned that this may have a negative impact on the game stability
 
+You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
+
 ## Theme Park Inc
 
 **DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL USE A FALLBACK FONT FOR MOST OF ITS IN-GAME TEXT.**
+
+- If you had already installed the game: 
+   - Backup your saves
+   - Uninstall the game
+   - Delete the installation folder (usually C:\Program Files (x86)\Bullfrog\Theme Park Inc)
+   - Delete the corresponding folder in your VirtualStore if it exists (usually C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park Inc)
+   - Restart your computer
 
  - Install the game
 
@@ -40,6 +56,8 @@
  - Optional: if you want to play with the bonus content from the North American version, copy the files from "TPI/Bonus content" into your installation folder
 
  - Optional: if you want to play on a 1080p monitor, you can copy the files from "TPI/1440x1080" into your installation folder, but be warned that this **WILL** have a negative impact on the game stability
+
+You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
 
 ## Detailed list of changes
 
