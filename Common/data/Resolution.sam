@@ -6,8 +6,11 @@
 #	Modifying this file is NOT recommended unless directed by an Electronic Arts Customer Service Representative
 #
 
+#	For the regular executable:
+#	RESOLUTION 0 - Use setting from Options Screen, 1 - 512x384, 2 - 640x480, 3 - 800x600, 4 - 1024x768, 5- 1280x1024, 6 - 1600x1200, 7 - 2048x1536
 #
-#	RESOULTION 0 - Use setting from Options Screen, 1 - 512x384, 2 - 640x480, 3 - 800x600, 4 - 1024x768, 5- 1280x1024, 6 - 1600x1200, 7 - 2048x1536
+#	For the alternate executable:
+#	RESOLUTION 0 - Use setting from Options Screen, 1 - 512x384, 2 - 640x480, 3 - 720x540, 4 - 960x720, 5- 1440x1080, 6 - 1920x1440, 7 - 2880x2160
 #
 
 Res.RESOLUTION	4

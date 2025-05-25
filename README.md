@@ -22,15 +22,13 @@
 
  - Install the patch 2.0 (you can find it in the TPW folder)
 
- - Copy the TP.exe file and the "data" folder from the "TPW" folder into your installation folder
+ - Copy TP.exe, TP_AltRes.exe and the "data" folder from the "TPW" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
 
  - Restart your computer
 
  - Optional: if you want to play with the bonus content from the Gold edition, copy the files from "TPW/Bonus content" into your installation folder
-
- - Optional: if you want to play on a 1080p monitor, you can copy the files from "TPW/1440x1080" into your installation folder, but be warned that this may have a negative impact on the game stability
 
 You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
 
@@ -47,7 +45,7 @@ You can now launch the game. Remember to set your graphic settings to "high" and
 
  - Install the game
 
- - Copy the Game.exe file and the "data" folder from the "TPI" folder into your installation folder
+ - Copy Game.exe, Game_AltRes.exe and the "data" folder from the "TPI" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
 
@@ -55,9 +53,29 @@ You can now launch the game. Remember to set your graphic settings to "high" and
 
  - Optional: if you want to play with the bonus content from the North American version, copy the files from "TPI/Bonus content" into your installation folder
 
- - Optional: if you want to play on a 1080p monitor, you can copy the files from "TPI/1440x1080" into your installation folder, but be warned that this **WILL** have a negative impact on the game stability
-
 You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
+
+## Changing your resolution
+
+The preferred way for changing your resolution is by editing the "data\Resolution.sam" file. By default, resolution is set at 1024x768 but you can change the number after "Res.RESOLUTION" to force the resolution you want. Please be aware though that increasing the resolution may have a negative impact on Theme Park World stability, and **WILL** have a negative impact on Theme Park Inc stability.
+
+Here is a list of all resolutions for the standard executable:
+ - 1 &rarr; 512x384
+ - 2 &rarr; 640x480
+ - 3 &rarr; 800x600
+ - 4 &rarr; 1024x768
+ - 5 &rarr; 1280x1024
+ - 6 &rarr; 1600x1200
+ - 7 &rarr; 2048x1536
+
+Alternatively, you can use the "AltRes" executable (TP_AltRes.exe for TPW, Game_AltRes.exe for TPI) that provides a different set of resolutions, better suited for nowadays monitors:
+ - 1 &rarr; 512x384
+ - 2 &rarr; 640x480
+ - 3 &rarr; 720x540
+ - 4 &rarr; 960x720
+ - 5 &rarr; 1440x1080
+ - 6 &rarr; 1920x1440
+ - 7 &rarr; 2880x2160
 
 ## Detailed list of changes
 
@@ -74,7 +92,12 @@ You can now launch the game. Remember to set your graphic settings to "high" and
 
  - The bonus content from the North American versions are provided. Moreover, the two bonus rides for TPI have been fixed to work on non-english version of the game (the translations files were missing in the wad archive) although their name will be in english
 
- - Resolution will be forced to 1024x768 in both games as specified in "Data/Resolution.sam" (if you use the 1440x1080 files it will be 1440x1080)
+ - Resolution will be forced to 1024x768 in both games as specified in "Data/Resolution.sam"
+
+ - Alternate executables are provided with a different set of resolutions.
+   - For those who want to change one of the resolution themselves:
+     - TPW: With a hex editor, search for all occurences of `<32 bit integer for resolution width> C7 05 30 19 7A 00 <32 bit integer for resolution height>` (e.g. for 640x480: `80 02 00 00 C7 05 30 19 7A 00 E0 01 00 00`) in TP.exe and set the width and height to match your new resolution. If you use DDrawCompat, don't forget to add your new resolution in ddrawcompat.ini
+     - TPI: With a hex editor, Search for all occurences of `<32 bit integer for resolution width> C7 05 C8 C8 A2 00 <32 bit integer for resolution height>` (e.g. for 640x480: `80 02 00 00 C7 05 C8 C8 A2 00 E0 01 00 00`) in Game.exe and set the width and height to match your new resolution. If you use DDrawCompat, don't forget to add your new resolution in ddrawcompat.ini
 
  - The file high.sam has been modified to make the game look a bit better. Anisotropic 16x is also enforced in DDrawCompat (see ddrawcompat.ini if you want to change that)
 
