@@ -90,6 +90,12 @@ Alternatively, you can use the "AltRes" executable (TP_AltRes.exe for TPW, Game_
  - 6 &rarr; 1920x1440
  - 7 &rarr; 2880x2160
 
+## dgVoodoo
+
+If DDrawCompat does not work for you, or if for some reason you just prefer using dgVoodoo, a ready-to-use config file is provided in the "dgVoodoo" folder. 
+
+Note that only the config file is provided, you still need to download the dgVoodoo files on the official website.
+
 ## Detailed list of changes
 
  - Fonts should now work corectly in both games thanks to the addition of a read-only dummy file in Data/tpwfnt that prevents the deletion of the tpwfnt folder. The previous way of doing things (putting the fonts directly in tpwfnt as read-only) actually broke the in-game fonts so it is now advised to do that only if the game does not work at all.
