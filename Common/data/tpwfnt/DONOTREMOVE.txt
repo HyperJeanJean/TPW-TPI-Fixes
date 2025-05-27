@@ -1,0 +1,5 @@
+DO NOT REMOVE THIS FILE
+
+THIS FILE MUST BE IN READ ONLY MODE
+
+This ensures that the tpwfnt folder does not get deleted, fixing some font issues

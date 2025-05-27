@@ -2,13 +2,11 @@
 
 ## Theme Park World
 
-**DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL NOT WORK.**
-
  - If you had already installed the game: 
    - Backup your saves
    - Uninstall the game
-   - Delete the installation folder (usually C:\Program Files (x86)\Bullfrog\Theme Park World)
-   - Delete the corresponding folder in your VirtualStore if it exists (usually C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park World)
+   - Delete the installation folder (by default C:\Program Files (x86)\Bullfrog\Theme Park World)
+   - Delete the corresponding folder in your VirtualStore if it exists (by default C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park World)
    - Restart your computer
 
  - Install the game
@@ -22,38 +20,53 @@
 
  - Install the patch 2.0 (you can find it in the TPW folder)
 
- - Copy TP.exe, TP_AltRes.exe and the "data" folder from the "TPW" folder into your installation folder
+ - Copy TP.exe and TP_AltRes.exe from the "TPW" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
+
+ - Inside your installation folder, set the file "Data/tpwfnt/DONOTREMOVE.txt" as read-only
 
  - Restart your computer
 
  - Optional: if you want to play with the bonus content from the Gold edition, copy the files from "TPW/Bonus content" into your installation folder
 
-You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
+You can now launch the game. If you installed the game in "C:\Program Files (x86)" (which is the default) or any other folder that requires admin privileges, I would recommend you run the game as administrator otherwise you may have some minor font issues. Alternatively you can try copying the files from "TPW/Fonts" inside your installation folder (but don't do both, as the game will remove these files if it is run as admin).
+
+Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
 
 ## Theme Park Inc
-
-**DO NOT LAUNCH THE GAME UNTIL YOU HAVE COMPLETED ALL THE STEPS! OTHERWISE THE GAME WILL USE A FALLBACK FONT FOR MOST OF ITS IN-GAME TEXT.**
 
 - If you had already installed the game: 
    - Backup your saves
    - Uninstall the game
-   - Delete the installation folder (usually C:\Program Files (x86)\Bullfrog\Theme Park Inc)
-   - Delete the corresponding folder in your VirtualStore if it exists (usually C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park Inc)
+   - Delete the installation folder (by default C:\Program Files (x86)\Bullfrog\Theme Park Inc)
+   - Delete the corresponding folder in your VirtualStore if it exists (by default C:\Users\\\<Your username\>\AppData\Local\VirtualStore\Program Files (x86)\Bullfrog\Theme Park Inc)
    - Restart your computer
 
  - Install the game
 
- - Copy Game.exe, Game_AltRes.exe and the "data" folder from the "TPI" folder into your installation folder
+ - Copy Game.exe and Game_AltRes.exe from the "TPI" folder into your installation folder
 
  - Copy the files from the "Common" folder into your installation folder
+
+ - Inside your installation folder, set the file "Data/tpwfnt/DONOTREMOVE.txt" as read-only
 
  - Restart your computer
 
  - Optional: if you want to play with the bonus content from the North American version, copy the files from "TPI/Bonus content" into your installation folder
 
-You can now launch the game. Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
+You can now launch the game. If you installed the game in "C:\Program Files (x86)" (which is the default) or any other folder that requires admin privileges, I would recommend you run the game as administrator otherwise you may have some minor font issues. Alternatively you can try copying the files from "TPI/Fonts" inside your installation folder (but don't do both, as the game will remove these files if it is run as admin).
+
+Remember to set your graphic settings to "high" and make sure the hardware renderer is enabled in the options for better graphics.
+
+## Troubleshooting
+
+If your game crashes at start or does not launch, this may be caused by a font issue (more info here: https://web.archive.org/web/20200628063012/https://www.adamhearn.co.uk/games/themeparkworld/tpwwin2kfix.html). Please try this:
+ - Follow the installation procedure again, including the restarts. Do not launch the game!
+ - Copy the files from "TPW/Fonts" (for Theme Park World) or "TPI/Fonts" (for Theme Park Inc) into your installation folder
+ - Inside your installation folder, set all the files in "data/tpwfnt" as read-only
+ - Restart your computer
+ - Hopefully, you should now be able to play the game
 
 ## Changing your resolution
 
@@ -79,7 +92,7 @@ Alternatively, you can use the "AltRes" executable (TP_AltRes.exe for TPW, Game_
 
 ## Detailed list of changes
 
- - Fonts needed for both game have been extracted from their respective fonts.wad archive. TPW wouldn't work without them and TPI would work, but with a fallback font instead (Arial I believe). More info here: https://web.archive.org/web/20200628063012/https://www.adamhearn.co.uk/games/themeparkworld/tpwwin2kfix.html (although the fix provided on this website did not include all the font files)
+ - Fonts should now work corectly in both games thanks to the addition of a read-only dummy file in Data/tpwfnt that prevents the deletion of the tpwfnt folder. The previous way of doing things (putting the fonts directly in tpwfnt as read-only) actually broke the in-game fonts so it is now advised to do that only if the game does not work at all.
 
  - The text now correctly appears on the park gates and the rides. To fix that, usp10.dll was renamed to usp11.dll as Windows seems to prefer using its own non-working version of usp10.dll
 
