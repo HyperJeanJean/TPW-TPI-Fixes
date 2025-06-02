@@ -107,6 +107,18 @@ Note that only the config file is provided, you still need to download the dgVoo
      - TPW: Replace `24 10 C1 E0 10` with `24 10 C1 E0 13` in TP.exe with a hex editor
      - TPI: Replace `24 0C C1 E7 10` with `24 0C C1 E7 13` in Game.exe with a hex editor
 
+ - Both games have received fixes to avoid a potential buffer overflow issue on higher resolutions
+   - For TPW:
+     - Stack size has been raised from 1MB to 2MB
+     - Stack-allocated arrays have been increased from 4096 items (16KB) to 131072 items (512KB) in the functions at addresses `0058E390`, `0058E790`, `0058E820`, `0058F190`
+     - Some conditions have also been updated in the functions at addresses `0058E390`, `0058E790`, `0058E820` to make the game aware of the new buffer size
+     - An alternative set of executables is provided in "TPW/Increased stack" with a 9MB stack size and 4MB buffers in case the regular executables still don't work (no guarantee though)
+   - For TPI:
+     - Stack size has been raised from 1MB to 2MB
+     - Stack-allocated arrays have been increased from 4096 items (16KB) to 131072 items (512KB) in the functions at addresses `007030E0`, `007035C0`, `00703680`, `007043A0`
+     - Some conditions have also been updated in the functions at addresses `007030E0`, `007035C0`, `00703680` to make the game aware of the new buffer size
+     - An alternative set of executables is provided in "TPI/Increased stack" with a 9MB stack size and 4MB buffers in case the regular executables still don't work (no guarantee though)
+
  - DDrawCompat is used to fix most of the graphic issues on modern systems
 
  - The bonus content from the North American versions are provided. Moreover, the two bonus rides for TPI have been fixed to work on non-english version of the game (the translations files were missing in the wad archive) although their name will be in english
