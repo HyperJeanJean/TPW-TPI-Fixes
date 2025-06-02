@@ -122,7 +122,7 @@ Note that only the config file is provided, you still need to download the dgVoo
 
  - The QMixer DLL that is provided is a bit newer than the one distributed with the game. It seems to solve a few sound issues
 
- - The SFMAN32 DLL is provided in the "Unused" folder as the games executables have references to this DLL but AFAICT they don't appear to do anything with it
+ - The SFMAN32 DLL is provided in the "Midi" folder. The games might use this DLL if there is midi driver named "Soundfount" on your system, but this is untested.
 
 ## Known issues
  - Random crashes. It may or may not be related to graphics settings. In TPI at least, having a resolution above 1024x768 makes the game really unstable.
